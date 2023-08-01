@@ -1,6 +1,14 @@
 # Search-Engine
 Search or tag images
 
+![image](https://github.com/Abhiswain97/Search-Engine/assets/54038552/b660fe63-faaf-4f45-afe0-f2082bc14cb1)
+
+![image](https://github.com/Abhiswain97/Search-Engine/assets/54038552/91baa77c-ed1c-4db0-9215-5918e416de4c)
+
+![image](https://github.com/Abhiswain97/Search-Engine/assets/54038552/910039de-bd9e-4189-9636-fc3b35b10be7)
+
+![image](https://github.com/Abhiswain97/Search-Engine/assets/54038552/0ac91139-aa91-4cd1-8914-092533a04a52)
+
 ## How to run
 
 1. Install the requirements: `pip install -r requirements.txt`
