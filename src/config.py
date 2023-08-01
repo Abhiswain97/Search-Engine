@@ -21,7 +21,7 @@ GLOVE_WORD_VECS_INDEX = BASE_PATH_PARENTS / "assets" / "annoy_word_embedding_ind
 IDX2WORD_PATH = BASE_PATH_PARENTS / "assets" / "idx2word.json"
 WORD2IDX_PATH = BASE_PATH_PARENTS / "assets" / "word2idx.json"
 
-MODEL_PATH = BASE_PATH_PARENTS / "models"
+MODEL_PATH = BASE_PATH_PARENTS / "models" / "resnet50v2_model-30-0.80.hdf5"
 
 # Hyper parameters
 BATCH_SIZE = 16

@@ -16,9 +16,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-model = tf.keras.models.load_model(
-    r"C:\Users\abhi0\Desktop\Image_Search_Engine\models\resnet50v2_model-30-0.80.hdf5"
-)
+model = tf.keras.models.load_model(r"models\resnet50v2_model-30-0.80.hdf5")
 
 if radio == "Find images":
     search = st.sidebar.radio(
