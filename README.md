@@ -25,3 +25,8 @@ Search or tag images
    ![image](https://github.com/Abhiswain97/Search-Engine/assets/54038552/dc6b1b7d-2ff1-43b5-80cb-3d2ac71fa7fa)
 
 5. You are now ready to run the app! Just do `streamlit run streamlit_app.py`
+
+## References
+
+1. [Building an image search service from scratch](https://blog.insightdatascience.com/the-unreasonable-effectiveness-of-deep-learning-representations-4ce83fc663cf)
+2. [semantic-search](https://github.com/hundredblocks/semantic-search)
