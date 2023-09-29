@@ -1,4 +1,7 @@
 # Search-Engine
+
+### The project has an accompanying blog: [Building an Image Search/Tagging Engine](https://medium.com/@abhi08as-as/building-an-image-search-tagging-engine-285509b88c63)
+
 Search or tag images
 
 ![image](https://github.com/Abhiswain97/Search-Engine/assets/54038552/b660fe63-faaf-4f45-afe0-f2082bc14cb1)
