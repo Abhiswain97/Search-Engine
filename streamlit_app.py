@@ -12,8 +12,7 @@ radio = st.sidebar.radio(
 )
 
 st.markdown(
-    "<h1><i><center>Find Images/Tags</center></i><h1>",
-    unsafe_allow_html=True,
+    "<h1><i><center>Find Images/Tags</center></i><h1>", unsafe_allow_html=True,
 )
 
 model = tf.keras.models.load_model(r"models\resnet50v2_model-30-0.80.hdf5")

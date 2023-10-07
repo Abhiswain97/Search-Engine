@@ -170,6 +170,20 @@ def find_similar_tags(file, model, num_tags):
 
 
 def find_similar_images(model, num_images, search_by_word=None, image_pth=None):
+    """
+    Function to find similar for an image.
+
+    Parameters
+    ----------
+    model: The DL model
+    num_images: The number of images to recommend
+    search_by_word: The word to search for similar images
+    image_pth: Path to search image
+
+    Returns
+    -------
+    paths: Paths to recommended images
+    """
     idx2pth, ann_idx = create_image_embedding_index(paths=CFG.TEST_PATHS, model=model)
 
     if search_by_word is None:
@@ -201,6 +215,18 @@ def find_similar_images(model, num_images, search_by_word=None, image_pth=None):
 
 
 def plot_images(paths, ncols, nrows):
+    """
+    Function to plot the images
+
+    Parameters
+    ----------
+    paths: Paths to recommended images
+
+    Returns
+    -------
+    fig: The matplotlib figure
+
+    """
     fig, axs = plt.subplots(ncols=ncols, nrows=nrows)
 
     idx = 0
@@ -213,8 +239,3 @@ def plot_images(paths, ncols, nrows):
             idx += 1
 
     return fig
-
-
-# _ = create_word_index(file_path=CFG.GLOVE_EMBEDDINGS)
-
-# print(CFG.GLOVE_EMBEDDINGS)
