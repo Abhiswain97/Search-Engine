@@ -4,12 +4,13 @@ import matplotlib.pyplot as plt
 from PIL import Image
 from annoy import AnnoyIndex
 import json
-from pathlib import Path
+import tensorflow as tf
+from typing import Union
 
 import src.config as CFG
 
 
-def create_word_index(file_path):
+def create_word_index(file_path: str):
     """
     Function to create AnnoyIndex of glove word embeddings & index-to-word dict.
     Incase they are already present just load and return.
@@ -77,7 +78,7 @@ def create_word_index(file_path):
     return idx2word, word_embedding_index, word2idx
 
 
-def create_image_embedding_index(paths, model):
+def create_image_embedding_index(paths: list[str], model: tf.keras.Model):
     """
     Function to create AnnoyIndex of image embeddings & index-to-path dict.
     Incase they are already present just load and return.
@@ -136,7 +137,7 @@ def create_image_embedding_index(paths, model):
     return idx2path, all_image_embedings_indexed
 
 
-def find_similar_tags(file, model, num_tags):
+def find_similar_tags(file: str, model: tf.keras.Model, num_tags: int):
     """
     Function to find tags for an image.
 
@@ -169,7 +170,12 @@ def find_similar_tags(file, model, num_tags):
     return tags
 
 
-def find_similar_images(model, num_images, search_by_word=None, image_pth=None):
+def find_similar_images(
+    model: tf.keras.Model,
+    num_images: int,
+    search_by_word: Union[str, None] = None,
+    image_pth: str = None,
+):
     """
     Function to find similar for an image.
 
@@ -214,7 +220,7 @@ def find_similar_images(model, num_images, search_by_word=None, image_pth=None):
         return paths
 
 
-def plot_images(paths, ncols, nrows):
+def plot_images(paths: list[str], ncols: int, nrows: int):
     """
     Function to plot the images
 
